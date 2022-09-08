@@ -8,6 +8,8 @@
 #include "Button.h"
 #include "Label.h"
 
+const float PHYSICS_UPDATE_RATE = 1.0 / 60.0;
+
 class PlayScene : public Scene
 {
 public:
@@ -30,6 +32,20 @@ private:
 	Plane* m_pPlaneSprite{};
 	Player* m_pPlayer{};
 	bool m_playerFacingRight{};
+
+	float x1 = 0;
+	float y1 = 0;
+
+	float x2 = 0;
+	float y2 = 0;
+
+	float t = 0.0f;
+	float dt = PHYSICS_UPDATE_RATE;
+	float a = 1.0f;
+	float b = 100.0f;
+	float c = 100.0f;
+	float d = 100.0f;
+
 
 	// UI Items
 	Button* m_pBackButton{};

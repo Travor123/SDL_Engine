@@ -25,6 +25,13 @@ void PlayScene::Draw()
 
 void PlayScene::Update()
 {
+	y1 = c + sin(t + a) * b;
+	x1 = d + cos(t + a) * b;
+
+	t += dt;
+
+	(*m_pPlaneSprite).GetTransform()->position = glm::vec2(x1, y1);
+
 	UpdateDisplayList();
 }
 

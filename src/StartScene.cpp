@@ -50,7 +50,11 @@ void StartScene::Start()
 	m_pStartLabel->SetParent(this);
 	AddChild(m_pStartLabel);
 
-	m_pInstructionsLabel = new Label("Press 1 to Play", "Consolas", 40, blue, glm::vec2(400.0f, 120.0f));
+	m_guiName = new Label("Travor Bui 101376655", "Consolas", 60, blue, glm::vec2(400.0f, 90.0f));
+	m_guiName->SetParent(this);
+	AddChild(m_guiName);
+
+	m_pInstructionsLabel = new Label("Press 1 to Play", "Consolas", 40, blue, glm::vec2(400.0f, 130.0f));
 	m_pInstructionsLabel->SetParent(this);
 	AddChild(m_pInstructionsLabel);
 

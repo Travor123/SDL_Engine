@@ -19,10 +19,11 @@ public:
 	virtual void Clean() override;
 	virtual void HandleEvents() override;
 	virtual void Start() override;
-	
+
 private:
 	Label* m_pStartLabel{};
 	Label* m_pInstructionsLabel{};
+	Label* m_guiName{};
 
 	Ship* m_pShip{};
 
