@@ -57,6 +57,7 @@ void PlayScene::GetPlayerInput()
 	case static_cast<int>(InputType::GAME_CONTROLLER):
 	{
 		// handle player movement with GameController
+		//
 		if (SDL_NumJoysticks() > 0)
 		{
 			if (EventManager::Instance().GetGameController(0) != nullptr)
